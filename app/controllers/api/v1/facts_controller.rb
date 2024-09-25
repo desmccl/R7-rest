@@ -25,7 +25,7 @@ class Api::V1::FactsController < ApplicationController
         render json: @fact, status: 201
       else
         render json: { error: 
-  "The fact entry could not be created. #{@fact.errors.full_messages.to_sentence}"},
+          "The fact entry could not be created. #{@fact.errors.full_messages.to_sentence}"},
         status: 400
       end
     end
@@ -64,3 +64,4 @@ class Api::V1::FactsController < ApplicationController
       end
     end
   end
+end
